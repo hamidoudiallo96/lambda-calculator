@@ -13,9 +13,9 @@ const Numbers = () => {
   return (
     
       // console.log(numbersState);
-      numbers.map(element =>{
+      numbers.map((item, index) =>{
         return(
-          < NumberButtons num={element} />
+          < NumberButtons num={item} key = {index} />
           
 
         )}
