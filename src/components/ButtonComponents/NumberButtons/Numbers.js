@@ -13,13 +13,12 @@ const Numbers = () => {
   return (
     
       // console.log(numbersState);
-      numbers.map((item, index) =>{
-        return(
-          < NumberButtons num={item} key = {index} />
-          
-
-        )}
-      )
+      <div className ="numbers">
+        {numbers.map((item, index) =>{
+          return(< NumberButtons num={item} key = {index} />)
+        }
+      )}
+      </div>
 
       
 

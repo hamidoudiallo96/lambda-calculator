@@ -9,7 +9,7 @@ const Operators = () => {
   // STEP 2 - add the imported data to state
   console.log(typeof operators)
   return (
-    <div>
+    <div className = "operators">
       
       {operators.map((operator, index) => {
            return (<OperatorButtons signs={operator.char} key={index} />)
