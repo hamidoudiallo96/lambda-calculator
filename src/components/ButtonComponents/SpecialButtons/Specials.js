@@ -1,5 +1,5 @@
 import React from "react";
-import specials from '../../../data'
+import {specials} from '../../../data'
 import SpecialButton from './SpecialButton'
 //import any components needed
 
@@ -15,7 +15,7 @@ const Specials = () => {
        it any props needed by the child component*/}
        {specials.map(element =>{
          return(
-           <SpecialButton specs = {element} />
+           <SpecialButton specs={element} />
          )
        })}
     </div>

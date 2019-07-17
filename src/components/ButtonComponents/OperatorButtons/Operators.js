@@ -1,5 +1,5 @@
 import React from "react";
-import operators from '../../../data'
+import {operators} from '../../../data'
 import OperatorsButtons from './OperatorButton'
 //import any components needed
 
@@ -7,11 +7,12 @@ import OperatorsButtons from './OperatorButton'
 
 const Operators = () => {
   // STEP 2 - add the imported data to state
+  console.log(operators)
   return (
     <div>
       
         {operators.map(element =>{
-          return (<OperatorsButtons signs = {element} />)
+          return (<OperatorsButtons signs={element} />)
         })}
       
      
