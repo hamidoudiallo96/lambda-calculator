@@ -1,19 +1,19 @@
 import React from "react";
 import {operators} from '../../../data'
-import OperatorsButtons from './OperatorButton'
+import OperatorButtons from './OperatorButton'
 //import any components needed
 
 //Import your array data to from the provided data file
 
 const Operators = () => {
   // STEP 2 - add the imported data to state
-  console.log(operators)
+  console.log(typeof operators)
   return (
     <div>
       
-        {operators.map(element =>{
-          return (<OperatorsButtons signs={element} />)
-        })}
+      {operators.map((operator, index) => {
+           return (<OperatorButtons signs={operator.char} key={index} />)
+         })}
       
      
     </div>

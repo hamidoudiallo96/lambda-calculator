@@ -7,6 +7,7 @@ import SpecialButton from './SpecialButton'
 
 const Specials = () => {
   // STEP 2 - add the imported data to state
+  console.log(specials)
 
   return (
     <div>

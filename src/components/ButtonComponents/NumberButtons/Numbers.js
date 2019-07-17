@@ -15,7 +15,7 @@ const Numbers = () => {
       // console.log(numbersState);
       numbers.map(element =>{
         return(
-          < NumberButtons numbersState={element} />
+          < NumberButtons num={element} />
           
 
         )}
